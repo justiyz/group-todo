@@ -16,7 +16,28 @@ const port = process.env.PORT || 5000;
 
 //User Routes
 const userRoutes = require('./routes/route.user.js');
+const enums = require('./lib/enums/index.js');
 app.use('api/users', userRoutes);
+
+
+
+
+
+
+// Error Handling Middleware
+app.use((err, req, res, next) => {
+  const statusCode = err.statusCode || 500;
+  const message = err.message || 'Internal Server Error';
+  console.error(`${enums.CURRENT_TIME_STAMP}, [ERROR]: ${message}`); 
+  return res.status(statusCode).json({
+    status: 'error',
+    message,
+    code: statusCode,
+  });
+});
+
+
+
 
 
 
