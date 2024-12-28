@@ -9,8 +9,8 @@ module.exports = {
 
   generateAuthToken: (user) => {
     try {
-      const { user_id } = user;
-      return jwt.sign({ user_id }, TODO_ACCESS_TOKEN_SECRET, { expiresIn: '4h' });
+      const { id, email } = user;
+      return jwt.sign({ id, email }, TODO_ACCESS_TOKEN_SECRET, { expiresIn: '1h' });
     } catch (error) {
       return error;
     }

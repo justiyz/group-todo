@@ -22,6 +22,19 @@ class UserController {
         }
     }
 
+    static async login(req, res, next) {
+        try {
+            const {body, user } = req;
+            const response = await UserService.login(user);
+            
+            logger.info(`${ enums.CURRENT_TIME_STAMP }, Info: successfully logged in user::login.controllers.user.js`);
+            return res.status(enums.HTTP_OK).json(successResponse(enums.USER_LOGIN_SUCCESSFULLY, response));
+        } catch (error) {
+            logger.error(`${ enums.CURRENT_TIME_STAMP }, Info: signup failed::login.controllers.user.js`);
+            return next(error);
+        }
+    }
+
 
 
 }

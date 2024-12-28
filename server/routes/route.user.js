@@ -15,12 +15,11 @@ router.post(
     UserController.signup
 );
 
-// router.post('/login',
-//     PayloadValidationModel.login,
-//     UserMiddleware.comparePassword,
-//     UserMiddleware.checkOtpVerificationRequestCount,
-//     // AuthController.completeUserLoginRequest
-// );
+router.post('/login',
+    PayloadValidationModel.login,
+    UserMiddleware.comparePassword,
+    UserController.login
+);
 
 
 module.exports = router;
