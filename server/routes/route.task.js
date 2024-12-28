@@ -24,6 +24,13 @@ router.patch('/',
     TaskController.updateTask
 );
 
+router.post('/assign',
+    UserMiddleware.validateUserAuthToken,
+    PayloadValidationModel.assignTask,
+    TaskMiddleware.checkIfTaskExists,
+    TaskController.assignTask
+);
+
 
 
 

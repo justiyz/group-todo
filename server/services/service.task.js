@@ -35,6 +35,19 @@ class TaskService {
         }
     }
 
+    static async assignTask(body) {
+        try {
+            const payload = {
+                assignee_id: body.assignee_id, assigner_id: body.assigner_id,
+            };
+            const new_task = await TaskDao.update(body.id, payload);
+            return new_task;
+        } catch (error) {
+            logger.error(`${ enums.CURRENT_TIME_STAMP }, assigning task failed::updateTask.service.user.js`, error.message);
+            throw error;
+        }
+    }
+
 
 
 

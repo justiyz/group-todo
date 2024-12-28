@@ -19,11 +19,11 @@ const updateTask = Joi.object().keys({
 });
 
 
-
-
-
-
-
+const assignTask = Joi.object().keys({
+    id: Joi.number().required(),
+    assignee_id: Joi.number().optional(),
+    assigner_id: Joi.number().optional(),
+});
 
 
 
@@ -33,5 +33,6 @@ const updateTask = Joi.object().keys({
 module.exports = {
     createTask,
     updateTask,
+    assignTask,
     
 }

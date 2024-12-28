@@ -40,6 +40,21 @@ class TaskController {
         }
     }
 
+    static async assignTask(req, res, next) {
+        try {
+            const {body, task_details} = req;
+            
+            const response = await TaskService.assignTask(body);
+            
+            logger.info(`${ enums.CURRENT_TIME_STAMP }, Info: successfully assigned a task::assignTask.controllers.user.js`);
+
+            return res.status(enums.HTTP_OK).json(successResponse(`task assigned successfully`, response));
+        } catch (error) {
+            logger.error(`${ enums.CURRENT_TIME_STAMP }, Info: assigning task failed::assignTask.controllers.user.js`);
+            return next(error);
+        }
+    }
+
 
 
 }
