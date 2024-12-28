@@ -48,18 +48,18 @@ class UserMiddleware {
             const {body: {password, email, username},  } = req;
             const user = email ? await UserDao.getUserByEmail(email) : await UserDao.getUserByUsername(username);
             if (!user) {
-                logger.error(`${ enums.CURRENT_TIME_STAMP },:::Info: user not found::comparePassword.middlewares.auth.js`);
+                logger.error(`${ enums.CURRENT_TIME_STAMP },:::Info: user not found::comparePassword.middlewares.user.js`);
                 return res.status(enums.HTTP_BAD_REQUEST).json(errorResponse('user not found', enums.HTTP_BAD_REQUEST));
             }
 
             const passwordValid = Hash.compareData(password, user.password);
-            logger.info(`${ enums.CURRENT_TIME_STAMP },:::Info: successfully returned compared passwords response comparePassword.middlewares.auth.js`);
+            logger.info(`${ enums.CURRENT_TIME_STAMP },:::Info: successfully returned compared passwords response comparePassword.middlewares.user.js`);
             if (passwordValid) {
-                logger.info(`${ enums.CURRENT_TIME_STAMP },:::Info: login password matches::comparePassword.middlewares.auth.js`);
+                logger.info(`${ enums.CURRENT_TIME_STAMP },:::Info: login password matches::comparePassword.middlewares.user.js`);
                 req.user = user;
                 return next();
             }
-            logger.info(`${ enums.CURRENT_TIME_STAMP },:::Info: login password does not match comparePassword.middlewares.auth.js`);
+            logger.info(`${ enums.CURRENT_TIME_STAMP },:::Info: login password does not match comparePassword.middlewares.user.js`);
             return res.status(enums.HTTP_BAD_REQUEST).json(errorResponse(enums.INVALID_LOGIN_OR_DETAILS, enums.HTTP_BAD_REQUEST));
         } catch (error) {
             error.label = enums.COMPARE_PASSWORD_MIDDLEWARE;

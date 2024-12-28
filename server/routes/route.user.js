@@ -25,5 +25,12 @@ router.get('/one',
     UserController.getUserDetails
 );
 
+// router.get('/invite',
+//     PayloadValidationModel.login,
+//     UserMiddleware.validateUserAuthToken,
+//     UserMiddleware.checkIfEmailIsUnique,
+//     UserController.inviteUser
+// );
+
 
 module.exports = router;

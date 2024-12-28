@@ -87,3 +87,94 @@
 2024-12-28T02:02:07.803Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
 2024-12-28T02:02:08.003Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
 2024-12-28T02:02:08.005Z [INFO]: 28-Dec-2024, 03:02:02, Info: successfully gotten a user details::getUserDetails.controllers.user.js
+2024-12-28T02:05:05.881Z [INFO]:  Info: successfully decoded that no authentication token was sent with the headers validateUserAuthToken.user.middlewares.js
+2024-12-28T02:05:27.926Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T02:05:27.932Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:05:28.137Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:05:28.139Z [INFO]: 28-Dec-2024, 03:04:57, Info: successfully gotten a user details::getUserDetails.controllers.user.js
+2024-12-28T02:42:55.813Z [INFO]:  Info: successfully decoded that no authentication token was sent with the headers validateUserAuthToken.user.middlewares.js
+2024-12-28T02:43:07.497Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T02:43:07.504Z [INFO]: undefined:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:43:30.064Z [INFO]: 28-Dec-2024, 03:42:01,:::Info: successfully returned compared passwords response comparePassword.middlewares.auth.js
+2024-12-28T02:43:30.067Z [INFO]: 28-Dec-2024, 03:42:01,:::Info: login password matches::comparePassword.middlewares.auth.js
+2024-12-28T02:43:30.071Z [INFO]: 28-Dec-2024, 03:42:01,3::: Info: successfully generated access token login.service.user.js
+2024-12-28T02:43:30.072Z [INFO]: 28-Dec-2024, 03:42:01, 3:::Info: successfully fetched token expiration time login.service.user.js
+2024-12-28T02:43:30.073Z [INFO]: 28-Dec-2024, 03:42:01, 3:::Info: successfully converted time from epoch time to a readable format login.service.user.js
+2024-12-28T02:43:30.074Z [INFO]: 28-Dec-2024, 03:42:01, Info: successfully logged in user::login.controllers.user.js
+2024-12-28T02:43:48.791Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T02:43:48.793Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:43:48.797Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:44:25.146Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T02:44:25.154Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:44:25.157Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:46:25.803Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T02:46:25.809Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:46:26.012Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:47:09.030Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T02:47:09.037Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:47:09.242Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:53:30.765Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T02:53:30.775Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:53:31.054Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:53:31.060Z [INFO]: 28-Dec-2024, 03:53:25,:::Info: organization name is unique::checkIfOrganizationNameIsUnique.middlewares.organization.js
+2024-12-28T02:53:53.674Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T02:53:53.682Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:53:53.880Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:53:53.887Z [INFO]: 28-Dec-2024, 03:53:49,:::Info: organization name is unique::checkIfOrganizationNameIsUnique.middlewares.organization.js
+2024-12-28T02:53:53.888Z [ERROR]: 28-Dec-2024, 03:53:49, Info: getting user details failed::getUserDetails.controllers.user.js
+2024-12-28T02:54:21.944Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T02:54:21.950Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:54:22.191Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:54:22.198Z [INFO]: 28-Dec-2024, 03:54:13,:::Info: organization name is unique::checkIfOrganizationNameIsUnique.middlewares.organization.js
+2024-12-28T02:54:22.219Z [INFO]: 28-Dec-2024, 03:54:13, Info: successfully gotten a user details::getUserDetails.controllers.user.js
+2024-12-28T02:54:22.221Z [ERROR]: 28-Dec-2024, 03:54:13, Info: getting user details failed::getUserDetails.controllers.user.js
+2024-12-28T02:55:47.149Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T02:55:47.155Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:55:47.506Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:55:47.514Z [INFO]: 28-Dec-2024, 03:55:40,:::Info: organization name is unique::checkIfOrganizationNameIsUnique.middlewares.organization.js
+2024-12-28T02:55:47.531Z [INFO]: 28-Dec-2024, 03:55:40, Info: successfully gotten a user details::getUserDetails.controllers.user.js
+2024-12-28T02:56:58.916Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T02:56:58.924Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:56:59.149Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:56:59.156Z [INFO]: 28-Dec-2024, 03:56:39,:::Info: organization name is unique::checkIfOrganizationNameIsUnique.middlewares.organization.js
+2024-12-28T02:56:59.173Z [INFO]: 28-Dec-2024, 03:56:39, Info: successfully gotten a user details::getUserDetails.controllers.user.js
+2024-12-28T02:57:35.996Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T02:57:35.999Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:57:36.004Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:57:36.009Z [ERROR]: 28-Dec-2024, 03:56:39,:::Info: organization name is not unique::checkIfOrganizationNameIsUnique.middlewares.organization.js
+2024-12-28T02:58:12.890Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T02:58:12.912Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:58:13.288Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T02:58:13.301Z [ERROR]: 28-Dec-2024, 03:58:02,:::Info: organization name is not unique::checkIfOrganizationNameIsUnique.middlewares.organization.js
+2024-12-28T03:00:10.923Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T03:00:10.931Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T03:00:11.158Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T03:00:28.381Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T03:00:28.388Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T03:00:28.587Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T03:00:28.593Z [ERROR]: 28-Dec-2024, 04:00:21,:::Info: organization name is not unique::checkIfOrganizationNameIsUnique.middlewares.organization.js
+2024-12-28T03:00:57.061Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T03:00:57.063Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T03:00:57.068Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T03:00:57.072Z [INFO]: 28-Dec-2024, 04:00:21,:::Info: organization name is unique::checkIfOrganizationNameIsUnique.middlewares.organization.js
+2024-12-28T03:00:57.088Z [INFO]: 28-Dec-2024, 04:00:21, Info: successfully gotten a user details::getUserDetails.controllers.user.js
+2024-12-28T03:01:02.742Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T03:01:02.745Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T03:01:02.749Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T03:01:02.752Z [INFO]: 28-Dec-2024, 04:00:21,:::Info: organization name is unique::checkIfOrganizationNameIsUnique.middlewares.organization.js
+2024-12-28T03:01:02.763Z [INFO]: 28-Dec-2024, 04:00:21, Info: successfully gotten a user details::getUserDetails.controllers.user.js
+2024-12-28T03:01:08.393Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T03:01:08.395Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T03:01:08.401Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T03:01:08.404Z [INFO]: 28-Dec-2024, 04:00:21,:::Info: organization name is unique::checkIfOrganizationNameIsUnique.middlewares.organization.js
+2024-12-28T03:01:08.414Z [INFO]: 28-Dec-2024, 04:00:21, Info: successfully gotten a user details::getUserDetails.controllers.user.js
+2024-12-28T03:01:12.820Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T03:01:12.822Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T03:01:12.826Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T03:01:12.829Z [INFO]: 28-Dec-2024, 04:00:21,:::Info: organization name is unique::checkIfOrganizationNameIsUnique.middlewares.organization.js
+2024-12-28T03:01:12.840Z [INFO]: 28-Dec-2024, 04:00:21, Info: successfully gotten a user details::getUserDetails.controllers.user.js
+2024-12-28T03:01:17.635Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T03:01:17.637Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T03:01:17.641Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T03:01:17.644Z [INFO]: 28-Dec-2024, 04:00:21,:::Info: organization name is unique::checkIfOrganizationNameIsUnique.middlewares.organization.js
+2024-12-28T03:01:17.652Z [INFO]: 28-Dec-2024, 04:00:21, Info: successfully gotten a user details::getUserDetails.controllers.user.js

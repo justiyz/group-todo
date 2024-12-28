@@ -12,6 +12,10 @@ const port = process.env.PORT || 5000;
 const userRoutes = require('./routes/route.user.js');
 app.use('/api/users', userRoutes);
 
+//Organization Routes
+const organizationRoutes = require('./routes/route.organization.js');
+app.use('/api/organizations', organizationRoutes);
+
 
 
 

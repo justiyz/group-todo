@@ -27,8 +27,16 @@ const login = Joi.object({
     'object.missing': 'Either email or username is required.'
 });
 
+const inviteUser = Joi.object().keys({
+    first_name: Joi.string(),
+    last_name: Joi.string(),
+    email: Joi.string().email().required(),
+});
+
+
 
 module.exports = {
     signup,
     login,
+    inviteUser,
 }

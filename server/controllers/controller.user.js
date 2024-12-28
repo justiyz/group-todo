@@ -48,6 +48,19 @@ class UserController {
         }
     }
 
+    static async inviteUser(req, res, next) {
+        try {
+            const {body, user } = req;
+            
+            logger.info(`${ enums.CURRENT_TIME_STAMP }, Info: successfully gotten a user details::getUserDetails.controllers.user.js`);
+            delete user.password;
+            return res.status(enums.HTTP_OK).json(successResponse(`user details fetched successfully`, user));
+        } catch (error) {
+            logger.error(`${ enums.CURRENT_TIME_STAMP }, Info: getting user details failed::getUserDetails.controllers.user.js`);
+            return next(error);
+        }
+    }
+
 
 
 }
