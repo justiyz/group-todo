@@ -79,6 +79,16 @@ const createTask = (req, res, next) => {
     next();
 };
 
+const updateTask = (req, res, next) => {
+    const {error, value} = TaskValidation.updateTask.validate(req.body, {allowUnknown: false});
+    if (error) {
+        return res.status(enums.HTTP_BAD_REQUEST).json(errorResponse(`${ error.details[0].message }`, enums.HTTP_BAD_REQUEST));
+    }
+    req.validatedData = value;
+    next();
+};
+
+
 
 
 module.exports = {
@@ -89,5 +99,6 @@ module.exports = {
     idParams,
     fetchAllOrganizaztions,
     createProject,
-    createTask
+    createTask,
+    updateTask,
 }

@@ -14,13 +14,28 @@ class TaskController {
         try {
             const {body, user} = req;
             
-            const response = await TaskService.createTask(body);
+            const response = await TaskService.createTask(body, user);
             
             logger.info(`${ enums.CURRENT_TIME_STAMP }, Info: successfully created a task::createTask.controllers.user.js`);
 
             return res.status(enums.HTTP_OK).json(successResponse(`task created successfully`, response));
         } catch (error) {
             logger.error(`${ enums.CURRENT_TIME_STAMP }, Info: creating task failed::createTask.controllers.user.js`);
+            return next(error);
+        }
+    }
+
+    static async updateTask(req, res, next) {
+        try {
+            const {body, task_details} = req;
+            
+            const response = await TaskService.updateTask(body);
+            
+            logger.info(`${ enums.CURRENT_TIME_STAMP }, Info: successfully updated a task::updateTask.controllers.user.js`);
+
+            return res.status(enums.HTTP_OK).json(successResponse(`task updated successfully`, response));
+        } catch (error) {
+            logger.error(`${ enums.CURRENT_TIME_STAMP }, Info: updating task failed::updateTask.controllers.user.js`);
             return next(error);
         }
     }

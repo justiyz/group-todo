@@ -337,3 +337,39 @@
 2024-12-28T08:49:52.712Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
 2024-12-28T08:49:52.719Z [INFO]: 28-Dec-2024, 09:49:46,:::Info: project found::checkIfProjectExists.middlewares.project.js
 2024-12-28T08:49:52.734Z [INFO]: 28-Dec-2024, 09:49:46, Info: successfully created a task::createTask.controllers.user.js
+2024-12-28T08:55:04.710Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T08:55:04.719Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:55:05.027Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:55:05.035Z [INFO]: 28-Dec-2024, 09:54:34,:::Info: project found::checkIfProjectExists.middlewares.project.js
+2024-12-28T08:55:05.046Z [INFO]: 28-Dec-2024, 09:54:34, Info: successfully created a task::createTask.controllers.user.js
+2024-12-28T09:06:32.084Z [INFO]:  Info: successfully decoded that no authentication token was sent with the headers validateUserAuthToken.user.middlewares.js
+2024-12-28T09:06:39.563Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T09:06:39.568Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T09:06:39.774Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T09:06:57.688Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T09:06:57.691Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T09:06:57.697Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T09:07:51.746Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T09:07:51.753Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T09:07:51.992Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T09:09:37.335Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T09:09:37.345Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T09:09:37.562Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T09:09:37.570Z [ERROR]: 28-Dec-2024, 10:09:32,:::Info: task not found::checkIfTaskExists.middlewares.task.js
+2024-12-28T09:09:57.367Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T09:09:57.369Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T09:09:57.373Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T09:09:57.378Z [INFO]: 28-Dec-2024, 10:09:32,:::Info: task found::checkIfTaskExists.middlewares.task.js
+2024-12-28T09:09:57.379Z [ERROR]: 28-Dec-2024, 10:09:32, updating task failed::updateTask.service.user.js
+2024-12-28T09:09:57.381Z [ERROR]: 28-Dec-2024, 10:09:32, Info: updating task failed::updateTask.controllers.user.js
+2024-12-28T09:13:07.699Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T09:13:07.707Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T09:13:07.944Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T09:13:07.952Z [INFO]: 28-Dec-2024, 10:13:01,:::Info: task found::checkIfTaskExists.middlewares.task.js
+2024-12-28T09:13:07.959Z [ERROR]: 28-Dec-2024, 10:13:01, updating task failed::updateTask.service.user.js
+2024-12-28T09:13:07.960Z [ERROR]: 28-Dec-2024, 10:13:01, Info: updating task failed::updateTask.controllers.user.js
+2024-12-28T09:14:55.929Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T09:14:55.939Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T09:14:56.222Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T09:14:56.230Z [INFO]: 28-Dec-2024, 10:14:45,:::Info: task found::checkIfTaskExists.middlewares.task.js
+2024-12-28T09:14:56.248Z [INFO]: 28-Dec-2024, 10:14:45, Info: successfully updated a task::updateTask.controllers.user.js

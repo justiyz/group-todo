@@ -12,6 +12,11 @@ const createTask = Joi.object().keys({
     priority: Joi.string().required().valid("low", "medium", "high"),
 });
 
+const updateTask = Joi.object().keys({
+    id: Joi.number().required(),
+    name: Joi.string().optional(),
+    status: Joi.string().optional().valid("todo", "in-progress", "test", "passed", "failed"),
+});
 
 
 
@@ -27,6 +32,6 @@ const createTask = Joi.object().keys({
 
 module.exports = {
     createTask,
-    
+    updateTask,
     
 }

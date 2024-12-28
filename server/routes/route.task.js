@@ -17,6 +17,13 @@ router.post('/',
     TaskController.createTask
 );
 
+router.patch('/',
+    UserMiddleware.validateUserAuthToken,
+    PayloadValidationModel.updateTask,
+    TaskMiddleware.checkIfTaskExists,
+    TaskController.updateTask
+);
+
 
 
 
