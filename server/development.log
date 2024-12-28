@@ -285,3 +285,25 @@
 2024-12-28T04:45:13.630Z [INFO]: 28-Dec-2024, 05:45:08,:::Info: organization found::checkIfOrganizationNameIsUnique.middlewares.organization.js
 2024-12-28T04:45:13.635Z [INFO]: 28-Dec-2024, 05:45:08,:::Info: project name is unique::checkIfProjectnameIsUnique.middlewares.organization.js
 2024-12-28T04:45:13.651Z [INFO]: 28-Dec-2024, 05:45:08, Info: successfully created a project::createProject.controllers.user.js
+2024-12-28T08:02:00.728Z [INFO]:  Info: successfully decoded that no authentication token was sent with the headers validateUserAuthToken.user.middlewares.js
+2024-12-28T08:02:09.186Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T08:02:09.191Z [INFO]: undefined:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:02:49.629Z [INFO]: 28-Dec-2024, 09:02:38,:::Info: successfully returned compared passwords response comparePassword.middlewares.user.js
+2024-12-28T08:02:49.632Z [INFO]: 28-Dec-2024, 09:02:38,:::Info: login password matches::comparePassword.middlewares.user.js
+2024-12-28T08:02:49.638Z [INFO]: 28-Dec-2024, 09:02:38,3::: Info: successfully generated access token login.service.user.js
+2024-12-28T08:02:49.639Z [INFO]: 28-Dec-2024, 09:02:38, 3:::Info: successfully fetched token expiration time login.service.user.js
+2024-12-28T08:02:49.641Z [INFO]: 28-Dec-2024, 09:02:38, 3:::Info: successfully converted time from epoch time to a readable format login.service.user.js
+2024-12-28T08:02:49.642Z [INFO]: 28-Dec-2024, 09:02:38, Info: successfully logged in user::login.controllers.user.js
+2024-12-28T08:03:23.374Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T08:03:23.379Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:03:23.577Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:03:23.583Z [ERROR]: 28-Dec-2024, 09:03:11,:::Info: project not found::checkIfProjectExists.middlewares.project.js
+2024-12-28T08:04:14.086Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T08:04:14.096Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:04:14.514Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:04:14.521Z [ERROR]: 28-Dec-2024, 09:04:02,:::Info: project not found::checkIfProjectExists.middlewares.project.js
+2024-12-28T08:04:20.461Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T08:04:20.463Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:04:20.468Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:04:20.473Z [INFO]: 28-Dec-2024, 09:04:02,:::Info: project found::checkIfProjectExists.middlewares.project.js
+2024-12-28T08:04:20.474Z [INFO]: 28-Dec-2024, 09:04:02, Info: successfully gotten project details::getOrganizationDetails.controllers.user.js

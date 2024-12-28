@@ -17,6 +17,13 @@ router.post('/',
 );
 
 
+router.get('/:id',
+    UserMiddleware.validateUserAuthToken,
+    PayloadValidationModel.idParams,
+    ProjectMiddleware.checkIfProjectExists,
+    ProjectController.getProjectDetails
+);
+
 
 
 
