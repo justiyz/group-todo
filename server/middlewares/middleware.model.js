@@ -41,9 +41,32 @@ const addOrganization = (req, res, next) => {
     next();
 };
 
+const idParams = (req, res, next) => {
+    const {error, value} = OrganizationValidation.idParams.validate(req.params, {allowUnknown: false});
+    if (error) {
+        return res.status(enums.HTTP_BAD_REQUEST).json(errorResponse(`${ error.details[0].message }`, enums.HTTP_BAD_REQUEST));
+    }
+    req.validatedData = value;
+    next();
+};
+
+const fetchAllOrganizaztions = (req, res, next) => {
+    const { error, value } = OrganizationValidation.fetchAllOrgaizations.validate(req.query, { allowUnknown: false });
+    if (error) {
+        return res.status(enums.HTTP_BAD_REQUEST).json(errorResponse(`${ error.details[0].message }`, enums.HTTP_BAD_REQUEST));
+    }
+    req.validatedData = value;
+    next();
+};
+
+
+
+
 module.exports = {
     signup,
     login,
     inviteUser,
     addOrganization,
+    idParams,
+    fetchAllOrganizaztions,
 }

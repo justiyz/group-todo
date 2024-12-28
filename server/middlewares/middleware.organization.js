@@ -29,6 +29,24 @@ class OrganizationMiddleware {
         }
     }
 
+    static async checkIfOrganizationExists(req, res, next) {
+        try {
+
+            const {params: {id}} = req;
+            const organization = await OrganizationDao.get(id);
+            if (!organization) {
+                logger.error(`${ enums.CURRENT_TIME_STAMP },:::Info: organization not found::checkIfOrganizationNameIsUnique.middlewares.organization.js`);
+                return res.status(enums.HTTP_BAD_REQUEST).json(errorResponse('organization not found', enums.HTTP_BAD_REQUEST));
+            }
+            logger.info(`${ enums.CURRENT_TIME_STAMP },:::Info: organization found::checkIfOrganizationNameIsUnique.middlewares.organization.js`);
+            req.organization_details = organization;
+            return next();            
+        } catch (error) {
+            return next(error);
+        }
+    }
+
+
 }
 
 

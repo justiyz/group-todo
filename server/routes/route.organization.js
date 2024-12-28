@@ -15,6 +15,19 @@ router.post('/',
     OrganizationController.addOrganization
 );
 
+router.get('/:id',
+    UserMiddleware.validateUserAuthToken,
+    PayloadValidationModel.idParams,
+    OrganizationMiddleware.checkIfOrganizationExists,
+    OrganizationController.getOrganizationDetails
+);
+
+router.get('/',
+    UserMiddleware.validateUserAuthToken,
+    PayloadValidationModel.fetchAllOrganizaztions,
+    OrganizationController.getOrganizations
+);
+
 
 
 

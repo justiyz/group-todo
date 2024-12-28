@@ -46,7 +46,31 @@ class OrganizationDao{
     
     static async clear() {
         return knex('organizations').del().returning('*');
-}
+    }
+    
+
+    static async findAndCountAll(query) {
+        const { owner_id, search, page = 1, per_page = 10 } = query;
+        const offset = (page - 1) * per_page;
+    
+        const baseQuery = knex('organizations').where({ owner_id });    
+        if (search) {
+            baseQuery.where('name', 'ILIKE', `%${search}%`);
+        }    
+        const total_count = await baseQuery.clone().count('* as total').first().then(result => parseInt(result.total, 10));
+        const rows = await baseQuery
+            .select('*')
+            .offset(offset)
+            .limit(per_page)
+            .orderBy('name', 'ASC');
+    
+        return {
+            total_count,
+            rows,
+        };
+    }
+    
+    
     
 }
 
