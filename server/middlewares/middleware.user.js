@@ -4,6 +4,8 @@ const {errorResponse} = require('../helpers/response');
 const enums = require('../lib/enums');
 const logger = require('../logger/logger');
 const Hash = require('../lib/lib.util.hash');
+const constants = require('../utils/constants');
+const {TODO_ACCESS_TOKEN_SECRET, } = process.env;
 
 
 
@@ -62,6 +64,41 @@ class UserMiddleware {
         } catch (error) {
             error.label = enums.COMPARE_PASSWORD_MIDDLEWARE;
             logger.error(`comparing incoming and already set password in the DB failed:::${ enums.COMPARE_PASSWORD_MIDDLEWARE }`, error.message);
+            return next(error);
+        }
+    };
+
+
+    static async validateUserAuthToken(req, res, next) {
+        try {
+            let token = req.headers.authorization;
+            if (!token) {
+                logger.info(` Info: successfully decoded that no authentication token was sent with the headers validateUserAuthToken.user.middlewares.js`);
+                return res.status(enums.HTTP_UNAUTHORIZED).json(errorResponse(enums.NO_TOKEN, enums.HTTP_UNAUTHORIZED));
+            }
+            if (!token.startsWith(constants.BEARER_PREFIX)) {
+                return res.status(enums.HTTP_UNAUTHORIZED).json(errorResponse(enums.INVALID_TOKEN, enums.HTTP_UNAUTHORIZED));
+            }
+            if (token.startsWith(constants.BEARER_PREFIX)) {
+                token = token.slice(7, token.length);
+                logger.info(`Info: successfully extracts token validateUserAuthToken.user.middlewares.js`);
+            }
+            const decoded = Hash.verifyToken(token, TODO_ACCESS_TOKEN_SECRET);
+            logger.info(`${ decoded.id }:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js`);
+            if (decoded.message) {
+                if (decoded.message === 'jwt expired') {
+                    return res.status(enums.HTTP_UNAUTHORIZED).json(errorResponse(enums.SESSION_EXPIRED, enums.HTTP_UNAUTHORIZED));
+                }
+                logger.info(`${ decoded.id }:::Info: successfully decoded authentication token has a message which is an error message. validateUserAuthToken.user.middlewares.js`);
+                return res.status(enums.HTTP_UNAUTHORIZED).json(errorResponse(` ${ decoded.message }.`, enums.HTTP_UNAUTHORIZED));
+            }
+            const user = await UserDao.get(decoded.id);
+            logger.info(` ${ decoded.id }:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js`);
+
+            req.user = user;
+            return next();
+        } catch (error) {
+            logger.error(`Validating the user auth token sent failed:::UserAuthMiddleware::validateUserAuthToken`, error.message);
             return next(error);
         }
     };

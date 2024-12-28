@@ -7,8 +7,7 @@ const PayloadValidationModel = require('../middlewares/middleware.model');
 
 
 
-router.post(
-    '/signup',
+router.post('/signup',
     PayloadValidationModel.signup,
     UserMiddleware.checkIfEmailIsUnique,
     UserMiddleware.checkIfUsernameIsUnique,
@@ -19,6 +18,11 @@ router.post('/login',
     PayloadValidationModel.login,
     UserMiddleware.comparePassword,
     UserController.login
+);
+
+router.get('/one',
+    UserMiddleware.validateUserAuthToken,
+    UserController.getUserDetails
 );
 
 
