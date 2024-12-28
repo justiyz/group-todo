@@ -20,6 +20,10 @@ app.use('/api/organizations', organizationRoutes);
 const projectRoutes = require('./routes/route.project.js');
 app.use('/api/projects', projectRoutes);
 
+//Task Routes
+const taskRoutes = require('./routes/route.task.js');
+app.use('/api/tasks', taskRoutes);
+
 
 
 

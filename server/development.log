@@ -307,3 +307,33 @@
 2024-12-28T08:04:20.468Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
 2024-12-28T08:04:20.473Z [INFO]: 28-Dec-2024, 09:04:02,:::Info: project found::checkIfProjectExists.middlewares.project.js
 2024-12-28T08:04:20.474Z [INFO]: 28-Dec-2024, 09:04:02, Info: successfully gotten project details::getOrganizationDetails.controllers.user.js
+2024-12-28T08:45:11.276Z [INFO]:  Info: successfully decoded that no authentication token was sent with the headers validateUserAuthToken.user.middlewares.js
+2024-12-28T08:45:21.509Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T08:45:21.515Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:45:21.762Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:45:43.094Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T08:45:43.096Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:45:43.100Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:47:01.525Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T08:47:01.526Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:47:01.530Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:47:41.648Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T08:47:41.655Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:47:41.853Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:47:48.811Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T08:47:48.814Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:47:48.819Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:47:48.826Z [INFO]: 28-Dec-2024, 09:47:34,:::Info: project found::checkIfProjectExists.middlewares.project.js
+2024-12-28T08:47:48.838Z [ERROR]: 28-Dec-2024, 09:47:34, creating task failed::createOrganization.service.user.js
+2024-12-28T08:47:48.838Z [ERROR]: 28-Dec-2024, 09:47:34, Info: creating task failed::createTask.controllers.user.js
+2024-12-28T08:49:01.370Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T08:49:01.378Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:49:01.592Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:49:01.598Z [INFO]: 28-Dec-2024, 09:48:45,:::Info: project found::checkIfProjectExists.middlewares.project.js
+2024-12-28T08:49:01.607Z [ERROR]: 28-Dec-2024, 09:48:45, creating task failed::createOrganization.service.user.js
+2024-12-28T08:49:01.608Z [ERROR]: 28-Dec-2024, 09:48:45, Info: creating task failed::createTask.controllers.user.js
+2024-12-28T08:49:52.502Z [INFO]: Info: successfully extracts token validateUserAuthToken.user.middlewares.js
+2024-12-28T08:49:52.510Z [INFO]: 3:::Info: successfully decoded authentication token sent using the authentication secret. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:49:52.712Z [INFO]:  3:::Info: successfully fetched the user details using the decoded user id. validateUserAuthToken.user.middlewares.js
+2024-12-28T08:49:52.719Z [INFO]: 28-Dec-2024, 09:49:46,:::Info: project found::checkIfProjectExists.middlewares.project.js
+2024-12-28T08:49:52.734Z [INFO]: 28-Dec-2024, 09:49:46, Info: successfully created a task::createTask.controllers.user.js
