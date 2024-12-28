@@ -3,6 +3,7 @@ const enums = require('../lib/enums');
 
 const UserValidation = require('../validations/validation.user');
 const OrganizationValidation = require('../validations/validation.organization');
+const ProjectValidation = require('../validations/validation.project');
 
 const signup = (req, res, next) => {
     const {error, value} = UserValidation.signup.validate(req.body, {allowUnknown: false});
@@ -59,6 +60,14 @@ const fetchAllOrganizaztions = (req, res, next) => {
     next();
 };
 
+const createProject = (req, res, next) => {
+    const {error, value} = ProjectValidation.createProject.validate(req.body, {allowUnknown: false});
+    if (error) {
+        return res.status(enums.HTTP_BAD_REQUEST).json(errorResponse(`${ error.details[0].message }`, enums.HTTP_BAD_REQUEST));
+    }
+    req.validatedData = value;
+    next();
+};
 
 
 
@@ -69,4 +78,5 @@ module.exports = {
     addOrganization,
     idParams,
     fetchAllOrganizaztions,
+    createProject
 }

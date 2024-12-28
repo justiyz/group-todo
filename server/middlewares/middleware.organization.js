@@ -32,7 +32,8 @@ class OrganizationMiddleware {
     static async checkIfOrganizationExists(req, res, next) {
         try {
 
-            const {params: {id}} = req;
+            const {params: {}} = req;
+            const id = req.params.id || req.body.organization_id;
             const organization = await OrganizationDao.get(id);
             if (!organization) {
                 logger.error(`${ enums.CURRENT_TIME_STAMP },:::Info: organization not found::checkIfOrganizationNameIsUnique.middlewares.organization.js`);

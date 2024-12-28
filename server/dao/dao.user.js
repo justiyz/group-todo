@@ -46,16 +46,3 @@ class UserDao{
 }
 
 module.exports = UserDao;
-
-
-
-
-
-// module.exports = {
-//     all,
-//     get,
-//     create,
-//     update,
-//     delete: del,
-//     clear
-// }

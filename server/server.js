@@ -16,6 +16,10 @@ app.use('/api/users', userRoutes);
 const organizationRoutes = require('./routes/route.organization.js');
 app.use('/api/organizations', organizationRoutes);
 
+//Project Routes
+const projectRoutes = require('./routes/route.project.js');
+app.use('/api/projects', projectRoutes);
+
 
 
 
